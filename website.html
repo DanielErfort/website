@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="scripts/general.js"></script>
+  </header>
+
+  <body>
+    <nav class="header">
+      <div class="header-right-section">
+        <a href="#" class="header-item">HOME</a>
+        <a href ="#about" class="header-item">ABOUT</a>
+        <a onclick="navigateToAnchor('#projects')" class="header-item">PROJECTS</a>
+        <a href ="#contact" class="header-item">CONTACT</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="js-movingObjects"></div>
+
+      <section class="home">
+        
+        <div class="introduction ">
+          <p class="transition-element-bottom">Hello, I'm <span class="introduction-name">Daniel Erfort</span>.</p>
+          <p class="transition-element-bottom">Passionate learner and</p>
+          <p class="transition-element-bottom">aspiring web developer!</p>
+          <a href="#about" class="transition-element-bottom">
+            <button class="button-more">Learn more about me!</button>
+          </a>
+        </div>
+        <div class="profile-picture-container">
+          <img class="profile-picture transition-element-bottom" src="images/cat.png">
+        </div>
+
+        
+        
+        
+      </section>
+
+      <section id="about" class="about">
+        <!-- <div class="triangle"></div> -->
+        <div class="title-container">
+          <p class="title transition-element-left">ABOUT</p>
+        </div>
+        <div class="study-picture-container">
+          <img class="study-picture transition-element-left" src="images/laptop.jpg">
+        </div>
+        <div class="about-content">
+          <p class="about-text transition-element-right">
+            During my studies in electrical engineering I got to know and love programming. 
+            First it led me into automation technology. Since October 2020, I have been active in this industry. 
+          </p>
+          <p class="about-text transition-element-right">
+            As a software developer in the automation technology I could already gain valuable experiences 
+            in programming and solving complex problems. 
+          </p>
+          <p class="about-text transition-element-right">
+            Now I want to dive into the world of web development and I am on my way to constantly learn new things.
+          </p>
+          <div class="resume-button transition-element-bottom" onclick="downloadResume()">
+            
+              Check out my full resume!
+           
+          </div>
+        </div>  
+
+        <div class="tools-container">
+          <p class="about-text">Tools I already had contact with:</p>
+          <div class="tools js-tools">
+          </div>
+        </div>        
+      </section>
+
+      <section id="projects" class="projects">    
+        <div class="title-container">
+          <p class="title transition-element-left">PROJECTS</p>
+        </div>
+        <div class="projects-content js-projects-content">
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="triangle"></div>
+        <div id="contact" class="title-container">
+          <p class="title transition-element-left">CONTACT</p>
+          <p class="title2 transition-element-right">Send me a message!</p>
+        </div>
+        <div class="contact-form transition-element-static">
+        
+          <input class="name" type="text" id="name" placeholder="Name">
+          <input class="email" type="email" id="email" placeholder="Email">
+          <input class="number" type="number" id="number" placeholder="Phone Number">
+          <textarea class="message" type="text" id="message" placeholder="Message"></textarea>
+
+          <button id="submit" type="submit" class="button-submit">SUBMIT</button>
+        </div>
+
+      </section>
+
+      <footer class="footer">
+        <div class="link-buttons">
+          <a href="https://www.xing.com/profile/Daniel_Erfort2" class="link-button" target="_blank">
+            <img class="link-image" src="images/xing.png" alt="">
+          </a>
+          <a href="https://de.linkedin.com/in/daniel-erfort-5ba5241a3?original_referer=https%3A%2F%2Fwww.google.com%2F" class="link-button" target="_blank">
+            <img class="link-image" src="images/linkedin.png" alt="">
+          </a>
+          <button class="link-button">
+            <img class="link-image" src="images/github.png" alt="">
+          </button>
+      </div>
+      </footer>
+    </main>
+
+   
+
+
+    <script src="data/tools.js"></script>
+    <script src="data/projects.js"></script>
+    <script src="data/movingObjects.js"></script>
+    <script src="scripts/about.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 57px; /*Die Höhe des Headers als offset berücksichtigen*/
+}
+
+p{
+  margin: 0;
+  color: white;
+}
+
+body{
+  margin: 0;
+  margin-top: 57px;
+  height: 3000px;
+  background-color: rgb(37,41,52);
+  background-color: white;
+  font-family: Roboto, sans-serif, Arial;
+  overflow-x: hidden;
+}
+
+.title-container{
+ /* grid-column: span 2;*/
+  display: flex;
+  align-items: end;
+  justify-content: center;
+ }
+
+.title{
+  color: rgb(37,41,52);
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.transition-element-bottom,
+.transition-element-left,
+.transition-element-right,
+.transition-element-up{
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.transition-element-bottom.show,
+.transition-element-left.show,
+.transition-element-right.show,
+.transition-element-up.show{
+  opacity: 1;
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
+.transition-element-bottom{
+  transform: translateY(100px);
+}
+
+.transition-element-up{
+  transform: translateY(-100px);
+}
+
+.transition-element-left{
+  transform: translateX(-50px);
+}
+
+.transition-element-right{
+  transform: translateX(100px);
+}
+
+.transition-element-static{
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.transition-element-static.show{
+  opacity: 1;
+  animation: bounce 1s ease;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(100%);
+  }
+  70% {
+    transform: scale(97%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}

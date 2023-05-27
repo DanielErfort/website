@@ -1,0 +1,35 @@
+.header{
+  margin: 0;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  z-index: 9999;
+
+  background-color: rgb(33, 33, 33);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  border-bottom: 2px solid rgb(0, 188, 212); 
+}
+
+.header-right-section{
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.header-item{
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: color 400ms;
+}
+
+.header-item:hover{
+  color: rgb(255, 64, 129);
+}
