@@ -10,7 +10,7 @@
 }
 
 .introduction{
-  font-size: 40px;
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
   /*margin-top: 300px;*/
@@ -20,6 +20,8 @@
   align-items: center;
 
   z-index: 10;
+
+  margin-left: 100px;
 }
 
 .introduction-name{
@@ -44,12 +46,12 @@
 
 .button-more,
 .button-submit{
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   background-color: transparent;
   border: 2px solid white;
-  margin-top: 10px;
-  padding: 10px 24px;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
   cursor: pointer;
   transition: background-color 0.5s;
   text-decoration: none;
@@ -114,7 +116,8 @@
 
 
 .moving-object {
-  width: 50px;
+  opacity: 1;
+/*   width: 50px;
   height: 50px;
   background: rgb(255, 64, 129);
   opacity: 50%;
@@ -130,32 +133,8 @@
   --rotation-start: 360deg;
   --rotation-end: 720deg;
   
-  animation: slide-and-rotate var(--animation-duration) linear infinite;
+  animation: slide-and-rotate var(--animation-duration) linear infinite; */
 }
-
-
-
-/*
-@keyframes slide-in-out {
-  0% { transform: translateX(100vw); }
-  50% { transform: translateX(0); }
-  100% { transform: translateX(-100vw); }
-}
-*/
-
-/*
-@keyframes slide-and-rotate {
-  0% {
-    transform: translateX(100vw) rotate(0deg);
-  }
-  50% {
-    transform: translateX(0) rotate(180deg);
-  }
-  100% {
-    transform: translateX(-100vw) rotate(360deg);
-  }
-}
-*/
 
 @keyframes slide-and-rotate {
   0% {
