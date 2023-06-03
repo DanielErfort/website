@@ -1,6 +1,8 @@
 .about{
-  background-color: rgb(245, 245, 245);
-  background-color: white;
+ /*  background-color: rgb(245, 245, 245);
+  background-color: white; */
+  background-color: rgb(68, 68, 68);
+
  /*  display:grid;
   grid-template-columns: 1fr 1fr; */
   grid-template-rows: 148px auto; /*Evtl title außerhalb der grid definieren und margin top von 100px */
@@ -19,6 +21,7 @@
 
 .about .title{
   color: rgb(37,41,52);
+  color: whitesmoke;
  /*  font-size: 40px; */
   font-weight: bold;
   margin: 0;
@@ -54,6 +57,7 @@
 
 .about-text{
   color: rgb(37,41,52);
+  color: whitesmoke;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -73,7 +77,7 @@
 }
 
 .resume-button{
-  font-size: 16px;
+  /* font-size: 16px;
   font-weight: bold;
   background-color: rgb(240, 240, 240);
   border: 2px solid rgb(37,41,52);
@@ -84,7 +88,7 @@
   display: inline-block;
   align-self: flex-start;
   
-  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; */
 }
 
 .resume-button a{
@@ -94,13 +98,13 @@
 }
 
 .resume-button:hover{
-  background-color: rgb(200, 200, 200);
+ /*  background-color: rgb(200, 200, 200);
   transform: translate(2px, -2px);
  
 
   background-color: rgb(4, 194, 201);
   color: white;
-  border-color: rgb(4, 194, 201);
+  border-color: rgb(4, 194, 201); */
 }
 
 .about-text{

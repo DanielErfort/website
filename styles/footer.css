@@ -1,5 +1,5 @@
 .footer{
-  height: 100px;
+  height: 160px;
   background-color: rgb(33, 33, 33);
 }
 
@@ -27,4 +27,15 @@
   align-items: center;
   vertical-align: center;
   padding: 2px 2px 0 2px;
+}
+
+.copyright-container{
+  display:flex;
+  justify-content: center;
+}
+
+.copyright-text{
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: rgb(0, 188, 212);
 }
