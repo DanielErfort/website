@@ -8,7 +8,7 @@ for(let i = 1; i <= objectsCount; i++){
   const positionTop = Math.random() * 92;
   const opacity = Math.random() * 67; //max. opacity 67%
   //const color = (Math.random()<0.5)? 'rgb(255, 64, 129)' : 'rgb(0, 188, 212)';
-  const color = (Math.random()<0.5)? 'white' : 'rgb(0, 188, 212)';
+  const color = (Math.random()<0.5)? 'rgb(230, 230, 230)' : 'rgb(0, 188, 212)';
   const duration = Math.random() * 40 + 20; // Zufallszahl zwischen 20 und 60
 
   const translation = (Math.random() * 45 + 5);
