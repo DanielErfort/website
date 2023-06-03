@@ -76,8 +76,8 @@
   margin-right: 20vw;
 }
 
-.resume-button{
-  /* font-size: 16px;
+/* .resume-button{
+   font-size: 16px;
   font-weight: bold;
   background-color: rgb(240, 240, 240);
   border: 2px solid rgb(37,41,52);
@@ -88,24 +88,24 @@
   display: inline-block;
   align-self: flex-start;
   
-  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; */
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; 
 }
-
+ */
 .resume-button a{
   display: block;
   text-decoration: none;
   color: rgb(37,41,52);
 }
 
-.resume-button:hover{
- /*  background-color: rgb(200, 200, 200);
+/* .resume-button:hover{
+   background-color: rgb(200, 200, 200);
   transform: translate(2px, -2px);
  
 
   background-color: rgb(4, 194, 201);
   color: white;
-  border-color: rgb(4, 194, 201); */
-}
+  border-color: rgb(4, 194, 201); 
+} */
 
 .about-text{
   justify-content: center;
